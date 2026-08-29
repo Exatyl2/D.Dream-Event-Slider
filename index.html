@@ -39,17 +39,15 @@
       opacity: 1;
     }
 
-    /* --- ADD YOUR PICTURES HERE --- */
-    /* Use relative file paths if images are stored in your repo (e.g., '1.jpg') */
-    /* Or paste full direct web URLs (e.g., 'https://domain.com/image.jpg') */
+    /* --- 8 PICTURE CONFIGURATION --- */
     .slide:nth-child(1) { background-image: url("1.png"); }
     .slide:nth-child(2) { background-image: url("2.png"); }
     .slide:nth-child(3) { background-image: url("3.png"); }
-    .slide:nth-child(3) { background-image: url("4.png"); }
-    .slide:nth-child(3) { background-image: url("5.png"); }
-    .slide:nth-child(3) { background-image: url("6.png"); }
-    .slide:nth-child(3) { background-image: url("7.png"); }
-    .slide:nth-child(3) { background-image: url("8.png"); }
+    .slide:nth-child(4) { background-image: url("4.png"); }
+    .slide:nth-child(5) { background-image: url("5.png"); }
+    .slide:nth-child(6) { background-image: url("6.png"); }
+    .slide:nth-child(7) { background-image: url("7.png"); }
+    .slide:nth-child(8) { background-image: url("8.png"); }
 
     /* Button Controls */
     .buttons button {
@@ -78,16 +76,14 @@
 <body>
 
   <div class="slider">
-    <!-- To add more images, add another <div class="slide"></div> here -->
-    <!-- and add a corresponding .slide:nth-child(N) rule in the CSS above -->
     <div class="slide current"></div>
     <div class="slide"></div>
     <div class="slide"></div>
-     <div class="slide"></div>
-     <div class="slide"></div>
-     <div class="slide"></div>
-     <div class="slide"></div>
-     <div class="slide"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
   </div>
 
   <div class="buttons">
@@ -100,7 +96,7 @@
     const nextButton = document.getElementById("next");
     const prevButton = document.getElementById("prev");
     const auto = true;
-    const intervalTime = 5000; // Time in milliseconds per slide
+    const intervalTime = 5000;
     let slideInterval;
 
     const nextSlide = () => {
